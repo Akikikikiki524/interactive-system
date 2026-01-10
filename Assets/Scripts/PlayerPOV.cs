@@ -4,9 +4,9 @@ public class PlayerPOV : MonoBehaviour
 {
     // パラメータ
     public Transform neck;                  // プレイヤーの首のTransformを指定
-    public float sensitivity    = 2.0f;     // マウス感度（視点の移動の速さを調整）
-    public float minVertical    = -90.0f;   // 視点の最小角度（縦の回転制限）
-    public float maxVertical    = 90.0f;    // 視点の最大角度（縦の回転制限）
+    public float sensitivity    = 10.0f;     // マウス感度（視点の移動の速さを調整）
+    public float minVertical    = -180.0f;   // 視点の最小角度（縦の回転制限）
+    public float maxVertical    = 180.0f;    // 視点の最大角度（縦の回転制限）
 
     // 演算用変数
     private float rotationX     = 0f;       // 縦方向の回転角度（首の回転）

@@ -23,6 +23,7 @@ public class AlienTimer : MonoBehaviour
         if (currentTime >= eventInterval)
         {
             TriggerAlienEvent();
+            SoundManager.Instance.PlaySE(0,5f);
             currentTime = 0f; 
         }
     }

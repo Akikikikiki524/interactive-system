@@ -794,6 +794,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4196760975972142707, guid: 756e3168060099441935afa4db74420c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4511191245400318961, guid: 756e3168060099441935afa4db74420c, type: 3}
       propertyPath: m_Name
       value: TextWindow

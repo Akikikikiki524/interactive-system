@@ -14,28 +14,22 @@ public class DoorInputTrigger : MonoBehaviour
     {
         inputPanel.SetActive(false);
         clearText.gameObject.SetActive(false);
+
+        // ★ Enter確定イベントを登録
+        inputField.onSubmit.AddListener(OnSubmitInput);
     }
 
     void OnMouseDown()
     {
         inputPanel.SetActive(true);
         inputField.text = "";
-        inputField.ActivateInputField(); // 自動フォーカス
+        inputField.ActivateInputField();
     }
 
-    void Update()
+    // ★ Enter が押された瞬間に呼ばれる
+    void OnSubmitInput(string input)
     {
-        if (!inputPanel.activeSelf) return;
-
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            CheckAnswer();
-        }
-    }
-
-    void CheckAnswer()
-    {
-        if (inputField.text == correctWord)
+        if (input == correctWord)
         {
             clearText.gameObject.SetActive(true);
             inputPanel.SetActive(false);
@@ -43,6 +37,7 @@ public class DoorInputTrigger : MonoBehaviour
         else
         {
             inputField.text = "";
+            inputField.ActivateInputField();
         }
     }
 }

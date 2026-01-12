@@ -1684,6 +1684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zoomPanel: {fileID: 1951359747}
   zoomImage: {fileID: 543353669}
+  playerPOV: {fileID: 0}
 --- !u!1 &1034438782
 GameObject:
   m_ObjectHideFlags: 0

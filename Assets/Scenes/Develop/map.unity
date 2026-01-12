@@ -1785,10 +1785,14 @@ MonoBehaviour:
   zoomPanel: {fileID: 1951359747}
   zoomImage: {fileID: 543353669}
 <<<<<<< HEAD
+<<<<<<< HEAD
   playerPOV: {fileID: 1430390620}
 =======
   playerPOV: {fileID: 0}
 >>>>>>> 8e2cb466a8d18a6f9cd711d756b7bb2f98b023d1
+=======
+  playerPOV: {fileID: 0}
+>>>>>>> 920c06fef68a568c370fd3a0982193e88d2df70f
 --- !u!1 &1034438782
 GameObject:
   m_ObjectHideFlags: 0
